@@ -58,7 +58,7 @@ Create a `.env` file in the project root (see up in the Installation section, or
 
 | Variable | Default | Description |
 |---|---|---|
-| `ARKITEKT_APPNAME` | — | **Required.** App identifier registered in Arkitekt (e.g. `arkirino`) |
+| `ARKITEKT_APPNAME` | — | **Required.** App identifier registered in Arkitekt (e.g. `fairinogale`) |
 | `ARKITEKT_URL` | `go.arkitekt.live` | URL of your Arkitekt server |
 | `REDEEM_TOKEN` | — | One-time redeem token for first-time app registration |
 | `FAIRINO_SDK_DIR` | auto-detected | Absolute path to the `fairino` SDK folder (overrides auto-detection) |
@@ -66,11 +66,11 @@ Create a `.env` file in the project root (see up in the Installation section, or
 Example `.env`:
 
 ```env
-ARKITEKT_APPNAME=arkirino
+ARKITEKT_APPNAME=farinogale
 ARKITEKT_URL=go.arkitekt.live
 REDEEM_TOKEN=your_token_here
 # Optional: override SDK path for CI or containers
-# FAIRINO_SDK_DIR=/home/pi/arkirino/fairino-python-sdk/linux/fairino
+# FAIRINO_SDK_DIR=/home/pi/fairinogale/fairino-python-sdk/linux/fairino
 ```
 
 Robot and gripper settings are configured directly in [app.py](app.py):

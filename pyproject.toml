@@ -1,9 +1,9 @@
 [project]
-name = "arkirino"
+name = "fairinogale"
 version = "0.1.0"
-description = "Add your description here"
+description = "Exposes robot pick-and-place routines as callable Arkitekt node so they can be orchestrated from any Arkitekt workflow."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "arkitekt-next>=0.35.0",
+    "arkitekt-next>=0.42.0",
 ]
