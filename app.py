@@ -23,7 +23,7 @@ global_sync = SyncGroup("robot_sync")
 def _resolve_sdk_path() -> Optional[Path]:
     # Allow explicit override for CI/containers: FAIRINO_SDK_DIR=/path/to/fairino/.../fairino
     env_dir = os.getenv(
-        "FAIRINO_SDK_DIR", "/home/pi/fairinogale/fairino-python-sdk/fairino"
+        "FAIRINO_SDK_DIR", "/home/pi/fairinogale/fairino-python-sdk/linux/fairino"
     )  # /home/pi/fairinogale/linux/fairino
     if env_dir:
         return Path(env_dir)
