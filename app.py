@@ -334,6 +334,32 @@ def init_robot_and_gripper():
 
 
 @register()
+def open_gripper():
+    """Open the gripper."""
+    if not init():
+        print("Robot not initialized. Exiting.")
+        return
+    try:
+        open_gripper()
+        print("Gripper opened successfully.")
+    except Exception as e:
+        print(f"Error opening gripper: {e}")
+
+
+@register()
+def close_gripper():
+    """Close the gripper."""
+    if not init():
+        print("Robot not initialized. Exiting.")
+        return
+    try:
+        close_gripper()
+        print("Gripper closed successfully.")
+    except Exception as e:
+        print(f"Error closing gripper: {e}")
+
+
+@register()
 def home_robot(move_speed: int = 30, acceleration: int = 30):
     """Move the robot to the home position. ATTENTION: The robot will take the shortest path to the home position, so make sure that the way is clear, or move the arm manually to a safe position before homing."""
     points = load_teach_points("./control-points/home_robot.json")
