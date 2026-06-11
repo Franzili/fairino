@@ -78,7 +78,7 @@ if RPC is None:
 # configuration
 # ---------------------------------------------------------
 # fairino5
-ROBOT_IP = "192.168.50.200"
+ROBOT_IP = "192.168.1.2"
 SPEED = 30
 TOOL = 0
 USER = 0
